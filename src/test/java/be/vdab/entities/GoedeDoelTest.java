@@ -41,4 +41,9 @@ public class GoedeDoelTest {
 	public void goedeDoelVerschiltVanEenObjectMetEenAnderType(){
 		assertNotEquals(doel, new Date());
 	}
+	
+	@Test
+	public void goedeDoelenMetDezelfdeNaamHebbenDezelfdeHashcode(){
+		assertEquals(new GoedeDoel("Cliniclowns").hashCode(), doel.hashCode());
+	}
 }
