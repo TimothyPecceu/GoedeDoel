@@ -19,7 +19,7 @@ public class GoedeDoelTest {
 	}
 	@Test
 	public void getNaam() {
-		assertEquals(NAAM+"*", doel.getNaam());
+		assertEquals(NAAM, doel.getNaam());
 	}
 	
 	@Test
